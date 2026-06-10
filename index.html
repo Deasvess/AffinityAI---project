@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affinity AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- home -->
+<section id="home" class="screen active">
+
+    <div class="logo">
+        <div class="logo-icon">✦</div>
+        <h1>Affinity <span>AI</span></h1>
+    </div>
+
+    <div class="card">
+     
+        <p>
+           Conecte seu produto aos creators mais compatíveis utilizando inteligência artificial 
+           para encontrar as melhores oportunidades em segundos
+        </p>
+        
+        <button onclick="showScreen('cadastro')">
+        Cadastrar Produto →
+        </button>
+    </div>
+
+</section>
+
+<!-- cadastro -->
+<section id="cadastro" class="screen">
+
+    <button class="back" onclick="showScreen('home')">
+        ← Voltar
+    </button>
+    <div class="card large">
+        <div class="icon-box">📦</div>
+        <h2>Cadastro de Produto</h2>
+        <p>
+            Preencha as informações do produto para encontrar creators compatíveis
+        </p>
+        <input
+            type="text"
+            id="produto"
+            placeholder="Ex: Curso Dev Full Stack"
+        >
+        <select id="categoria">
+            <option value="">Selecione a categoria</option>
+            <option>Tecnologia</option>
+            <option>Educação</option>
+            <option>Marketing</option>
+            <option>Games</option>
+            <option>Finanças</option>
+        </select>
+
+        <select id="publico">
+            <option value="">Selecione o público</option>
+            <option>15 - 18 anos</option>
+            <option>18 - 25 anos</option>
+            <option>25 - 35 anos</option>
+            <option>35 - 50 anos</option>
+        </select>
+
+        <div class="actions">
+            <button class="outline">Analisar</button>
+
+            <button onclick="buscarCreators()">
+                Buscar Creators
+            </button>
+        </div>
+
+    </div>
+</section>
+<section id="resultado" class="screen">
+
+    <button class="back" onclick="showScreen('cadastro')">
+        ← Voltar
+    </button>
+    <div class="success">✓</div>
+    <h2>Análise concluída</h2>
+    <p>
+        Creators encontrados para <span id="categoriaEscolhida"></span>
+    </p>
+
+   <div class="creator">
+    <div>
+        <h3>TechBR</h3>
+        <small>1.2M seguidores • <span class="categoriaCreator"></span></small>
+    </div>
+    <span class="score">94%</span>
+</div>
+
+<div class="creator">
+    <div>
+        <h3>Dev em Minutos</h3>
+        <small>890K seguidores • <span class="categoriaCreator"></span></small>
+    </div>
+    <span class="score">89%</span>
+</div>
+
+<div class="creator">
+    <div>
+        <h3>Código Fácil</h3>
+        <small>650K seguidores • <span class="categoriaCreator"></span></small>
+    </div>
+    <span class="score">86%</span>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
