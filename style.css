@@ -1,0 +1,152 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+body{
+background:#f4f7f6;
+color:#1f2937;
+}
+.screen{
+    display:none;
+    min-height:100vh;
+    padding:40px;
+}
+
+.active{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:20px;
+}
+.logo-icon{
+width:45px;
+height:45px;
+border-radius:12px;
+background:#98e012;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:22px;
+}
+.logo span{
+color:#98e012;
+}
+.subtitle{
+margin:20px 0;
+max-width:500px;
+text-align:center;
+color:#6b7280;
+}
+
+.card{
+margin-top:30px;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+width:450px;
+}
+.large{
+width:500px;
+}
+.card h2{
+margin-bottom:10px;
+}
+.card p{
+color:#6b7280;
+margin-bottom:25px;
+}
+button{
+border:none;
+padding:15px 25px;
+border-radius:12px;
+background:#98e012;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+button:hover{
+opacity:.9;
+}
+input,
+select{
+width:100%;
+padding:15px;
+margin-top:18px;
+border:1px solid #d1d5db;
+border-radius:12px;
+font-size:15px;
+}
+.actions{
+display:flex;
+gap:15px;
+margin-top:25px;
+}
+.actions button{
+flex:1;
+}
+.outline{
+background:white;
+color:#98e012;
+border:1px solid #98e012;
+}
+.back{
+background:none;
+color:#6b7280;
+margin-bottom:30px;
+align-self:flex-start;
+}
+.icon-box{
+width:70px;
+height:70px;
+margin:auto;
+border-radius:18px;
+background:#dff7ed;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin-bottom:20px;
+}
+.success{
+width:80px;
+height:80px;
+background:#dff7ed;
+color:#98e012;
+font-size:35px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:30px auto;
+}
+.creator{
+width:450px;
+background:white;
+padding:25px;
+border-radius:18px;
+margin-top:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.score{
+font-size:32px;
+font-weight:bold;
+color:#98e012;
+}
+#categoriaEscolhida{
+font-weight:bold;
+color:#98e012;
+}
